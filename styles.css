@@ -75,10 +75,6 @@ header a:hover::after {
     text-align: center;
 }
 
-.about-container p{
-    line-height: 2.5;
-}
-
 .project-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -103,4 +99,12 @@ header a:hover::after {
     justify-content: center;
     align-items: center;
     margin-top: 10rem;
+}
+
+.profile h1{
+  margin-block: 1.5rem;
+}
+
+.profile i {
+  color: #e3b008fc;
 }

@@ -1,33 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <style>
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      margin-inline: auto;
+    }
+
+    .mySwiper .swiper-pagination-bullet {
+      background-color: #e3b008fc !important;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <div>
-          <a href="https://www.freecodecamp.org/boypaida12" target="_blank">BAS</a>
-        </div>
-        <nav id="navbar">
-            <ul>
-                <li><a href="/index.html" id="portfolio">Home</a></li>
-              <li><a href="/about.html" id="about">About</a></li>
-              <li><a href="/contact.html" id="contact">Contact</a></li>
-              <li><a href="/portfolio.html" id="portfolio">Portfolio</a></li>
-              <li><a href="/skills.html" id="portfolio">Skills</a></li>
-            </ul>
-        </nav>
-      </header>
-      <!-- center div in the middle of about page -->
-    <div class="about-container center-container">
-        <p class="text-center">As an accountant, I help businesses with bookkeeping and accounts issues. As a teacher, I educate elementary 
-          students to achieve the best results in their academic life and to some extent, their personal upbringing. As a volunteer, I do my bit in realizing the SDG goal on Climate Change by engaging in activities such as education on 
-          plastic waste management within local communities in Accra, Ghana. As a tech student I focus on learning the skills required to be a full-stack developer. I also run <a href="#" style="text-decoration: none;" class="text-muted fw-semibold">Prime Legend Cleaning Hub,</a> a cleaning service that 
-          provides housekeeping, upholstery & carpet cleaning as well as car interior cleaning services.
-        </p>
+  <header>
+    <div>
+      <a href="https://www.freecodecamp.org/boypaida12" target="_blank">BAS</a>
+    </div>
+    <nav id="navbar">
+      <ul>
+        <li><a href="/index.html" id="portfolio">Home</a></li>
+        <li><a href="/about.html" id="about">About</a></li>
+        <li><a href="/contact.html" id="contact">Contact</a></li>
+        <li><a href="/portfolio.html" id="portfolio">Portfolio</a></li>
+        <li><a href="/skills.html" id="portfolio">Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- center div in the middle of about page -->
+
+  
+<div class="swiper mySwiper about-container center-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">As an accountant, I help businesses with bookkeeping and accounts issues.</div>
+    <div class="swiper-slide">As a teacher, I educate elementary 
+      students to achieve the best results in their academic life and to some extent, their personal upbringing.</div>
+    <div class="swiper-slide">As a volunteer, I do my bit in realizing the SDG goal on Climate Change by engaging in activities such as education on 
+      plastic waste management within local communities in Accra, Ghana.</div>
+    <div class="swiper-slide">As a tech student I focus on learning the skills required to be a full-stack developer.</div>
+  </div>
+  <div class="swiper-pagination"></div>
 </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    direction: "vertical",
+    mousewheel: true,
+    autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+      },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
 </body>
+
 </html>
