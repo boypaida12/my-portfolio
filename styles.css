@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Lato", sans-serif;
   color: whitesmoke;
 }
 
@@ -47,7 +47,7 @@ header a {
   color: black;
   text-decoration: none;
   position: relative;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 header a:hover::after {
@@ -66,6 +66,7 @@ header a:hover::after {
   height: 80vh;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-top: 5rem;
 }
 
@@ -93,13 +94,7 @@ header a:hover::after {
     /* border: 1px solid red; */
 }
 
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-    margin-top: 10rem;
-}
+
 
 .profile h1{
   margin-block: 1.5rem;
@@ -108,3 +103,5 @@ header a:hover::after {
 .profile i {
   color: #e3b008fc;
 }
+
+
