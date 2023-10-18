@@ -104,4 +104,19 @@ header a:hover::after {
   color: #e3b008fc;
 }
 
+@media screen and (max-width: 768px) {
+  .profile h1 {
+    font-size: 5.5vw;
+  }
+
+  #navbar ul {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .center-container {
+    height: 50vh;
+  }
+}
+
 

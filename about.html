@@ -11,7 +11,7 @@
   <style>
     .swiper-slide {
       text-align: center;
-      font-size: clamp(1.25rem, 2.25vw, 2.25rem);
+      font-size: clamp(1.2rem, 1.85vw, 2.25rem);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -60,7 +60,7 @@
 
 <script>
   var swiper = new Swiper(".mySwiper", {
-    direction: "vertical",
+    direction: window.innerWidth <= 768 ? "horizontal" : "vertical",
     mousewheel: true,
     autoplay: {
         delay: 3500,
