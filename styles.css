@@ -111,11 +111,18 @@ header a:hover::after {
 
   #navbar ul {
     /* position: absolute; */
-    bottom: 5rem;
+    bottom: 3.5rem;
   }
 
   .center-container {
-    height: 50vh;
+    height: 60vh;
+    border: 1px solid red;
+    margin-top: 0rem;
+  }
+
+  .skills-container {
+    margin-top: 2rem;
+    height: 400px;
   }
 
   .swiper-slide {
