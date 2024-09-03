@@ -110,12 +110,16 @@ header a:hover::after {
   }
 
   #navbar ul {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    bottom: 5rem;
   }
 
   .center-container {
     height: 50vh;
+  }
+
+  .swiper-slide {
+    font-size: 1rem;
   }
 }
 
